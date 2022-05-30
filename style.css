@@ -22,6 +22,9 @@ header {
     align-items: center;
 }
 
+div a {
+    text-decoration: none;
+}
 img {
     margin-top: 30px;
 }
@@ -43,7 +46,9 @@ main {
 }
 
 .form  {
-    margin: 45px 45px;
+    margin: 0 auto;
+    padding-left: 46px;
+    padding-right:59px ;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -91,16 +96,19 @@ main {
 .box-register {
     width: 620px;
     margin: 0 auto;
-    display: flex;;
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
+    padding: 45px;
     
     
 }
 
-.box-register label{
-    display: flex;
-    align-self: flex-;
+
+.box-terms label {
+    color: #111111;
 }
+
 
 .button-register {
     display: flex;
@@ -108,10 +116,20 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0px 12px;
-    ;
-
+    gap: 6px;
+    width: 81px;
+    height: 40px;
+    background: #0DBDBD;
+    color: white;
+    border: none;
+    border-radius: 10px;
 }
 
+
+
+.button-register:hover {
+    background:#0ca1a1;
+}
 
 
 /* SUCESS.HTML */
@@ -124,11 +142,14 @@ main {
     align-items: center;
 }
 
-.sucess input {
+.button-goback {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+}
+
+.goback  {
     padding: 0px 12px;
     font-size: 2.25em;
     width: 269px;
@@ -137,4 +158,9 @@ main {
     border: none;
     background: #0DBDBD;
     color: white;
+    gap: 6px;
+}
+
+.goback:hover {
+    background:#0ca1a1;
 }

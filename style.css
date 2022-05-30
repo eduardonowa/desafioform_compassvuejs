@@ -1,1 +1,37 @@
 /* RESET CSS*/
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    background: #e5e5e5;
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    margin-top: 30px;
+}
+h1 {
+    font-family: 'Inter', sans-serif;
+    line-height: 24px;
+    font-size: 36px;
+}
+
+main {
+    width: 620px;
+    height: 763px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    
+}

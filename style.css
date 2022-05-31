@@ -1,417 +1,424 @@
 /* RESET CSS*/
-body, h1, h2, p, ul, li, a {
-    margin: 0px;
-    padding: 0px;
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body {
-    background: #e5e5e5;
-    font-family: 'Nunito', sans-serif;
+  background: #e5e5e5;
+  font-family: "Nunito", sans-serif;
 }
 
-main {
-    max-width: 620px;
-    height: 763px;
-    margin: 0px auto;
-    background: white;
-    border-radius: 20px;
 
+main {
+  max-width: 620px;
+  height: 763px;
+  margin: 100px auto;
+  background: white;
+  border-radius: 20px;
 }
 
 .header-input {
-    max-width: 620px;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    
+  max-width: 620px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
 div a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.header-input h1{
-    font-family: 'Inter', sans-serif;
-    line-height: 1.5em;
-    font-size: 2.25em;
-    margin-top: 10px;
-    color:#111111;
+.header-input h1 {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5em;
+  font-size: 2.25em;
+  margin-top: 10px;
+  color: #111111;
 }
 
 .sucess h1 {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.5em;
-    font-size: 2.5em;
-    margin-top: 10px;
-    color:#111111;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5em;
+  font-size: 2.5em;
+  margin-top: 10px;
+  color: #111111;
 }
 
-
-.form  {
-    margin: 0 auto;
-    padding-left: 46px;
-    padding-right:59px ;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    color: #767676;
-}
-
-.form1 {
-    padding-bottom: 55px;
-}
-
-.form1, .form2 {
-    padding-bottom: 60px;
+.form {
+  margin: 0 auto;
+  padding-left: 46px;
+  padding-right: 59px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: #767676;
 }
 
 .form1 {
-    padding-bottom: 55px;
+  padding-bottom: 55px;
+}
+
+.form1,
+.form2 {
+  padding-bottom: 60px;
+}
+
+.form1 {
+  padding-bottom: 55px;
 }
 
 .form label {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .form input {
-    border: 2px solid #AAAAAA;
-    border-radius: 4px;
-    background: white;
-    height: 40px;
-    padding: 0 10px;
+  border: 2px solid #aaaaaa;
+  border-radius: 4px;
+  background: white;
+  height: 40px;
+  padding: 0 10px;
 }
 
 .input1 {
-       width: 513px;
-}   
-
-.input2, .input4{
-    width: 330px;
+  width: 513px;
 }
 
-.input3 {
-    width: 160px;
+.input2,
+.input4 {
+  width: 330px;
 }
 
-.input5
-.form3 {
-    
+.input3,
+.input5 {
+  width: 160px;
+  color: #767676;
 }
 
-.form3 , .form5{
-    padding-left: 22px;
+.form3,
+.form5 {
+  padding-left: 22px;
 }
-
-
 
 .box-register {
-    max-width: 620px;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 45px;
-    flex-flow: row wrap;
-    
-    
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 45px;
+  flex-flow: row wrap;
 }
 
 .box-terms input {
-    width: 20px;
-    height: 20px;
-    background: red;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  
+}
+
+
+.label-text {
+    text-shadow: 2px 2px 2 black;
+
 }
 
 .box-terms label {
-    color: #111111;
+  color: #111111;
+  cursor: pointer;
+  
+  
 }
 
 
-input[type="checkbox"]{
-    accent-color:#0DBDBD !important;
-}
-
-input[type="checkbox"]:focus+label:before{
-    color: white !important;
-}
 
 .button-register {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 12px;
-    gap: 6px;
-    width: 81px;
-    height: 40px;
-    background: #0DBDBD;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 6px;
+  width: 81px;
+  height: 40px;
+  background: #0dbdbd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-right: 15px;
+ 
 }
-
-
-
 
 .button-register:hover {
-    background:#0ca1a1;
-    cursor: pointer;
+  background: #0ca1a1;
+  cursor: pointer;
 }
-
 
 /* SUCESS.HTML */
 .header-sucess {
-    width: 620px;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 90px;
-
+  width: 620px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
 }
 
 .sucess-full {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .sucess {
-    width: 620px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
+  width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
 }
 
 .button-goback {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
 }
 
-
-
-.goback  {
-
-    padding: 0px 12px;
-    font-size: 2.25em;
-    width: 269px;
-    height: 177px;
-    border-radius: 10px;
-    border: none;
-    background: #0DBDBD;
-    color: white;
-    gap: 6px;
+.goback {
+  padding: 0px 12px;
+  font-size: 2.25em;
+  width: 269px;
+  height: 177px;
+  border-radius: 10px;
+  border: none;
+  background: #0dbdbd;
+  color: white;
+  gap: 6px;
 }
 
 .goback:hover {
-    background:#0ca1a1;
-    cursor: pointer;
+  background: #0ca1a1;
+  cursor: pointer;
 }
 
 /* MOBILE  */
 
-@media  (max-width:650px){
-    body {
-        background: white;
-    }
+@media (max-width: 650px) {
+  body {
+    background: white;
+  }
+
+  main,
+  .header-input,
+  .header-sucess,
+  .box-register {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  .form3,
+  .form5 {
+    padding: 0px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px;
+  }
+
+  .form1,
+  .form2,
+  .form4 {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 38px;
+  }
+
+  .input1,
+  .input2,
+  .input4 {
+    width: 100%;
+  }
+
+  .input3 {
+    display: flex;
+    align-self: flex-start;
+  }
 
 
-    main, .header-input, .header-sucess, .box-register {
-        margin: 0 auto;
-        height: 100%;
-        width: 100%;
-    }
+  .form3,
+  .form5 {
+    order: +1;
+  }
 
-    main {
-        height: 100%;
-    }
-    
-    .form3 , .form5 {
-        padding: 0px;
-    }
+  .box-register {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
 
+  .box-terms{
+    justify-content: flex-start;
+    padding-left: 25px;
+  }
 
-    .form{
+  .box-register a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px 0px;
-    }
-     
-    .form1, .form2, .form4{
+        justify-content: center;
         width: 100%;
-        padding: 0 20px;
-        margin-bottom: 38px;
-    }
 
-    .input1, .input2, .input4 {
-        width: 100%;
-    }
+  }
+  .button-register {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 88vw;
+    height: 70px;
+    margin: 20px 20px;
+    font-size: 1.125em;
+  }
 
-    .form3 {
-        
-    }
+  /* SUCESS */
 
-    
-     .form3, .form5 {
-    
-        order: +1;
-    }
+  .sucess {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
 
-    .box-register {
-        padding: 0px 0px;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
+  .header-sucess {
+    margin-top: 100px;
+  }
 
-    .button-register {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 80vw;
-        height: 70px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        ;
-    }
-    
-    /* SUCESS */
+  .sucess-full {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .sucess {
-        height: 100%;
-        width: 100%;
-        margin-top:10px ;
-    }
-
-
-    .header-sucess {
-        margin-top: 180px;
-     }
-
-    .sucess-full {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .button-goback {
-        margin-top: 100px;
-        width: 330px;
-    }
-    .goback {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        width: 80vw;
-        height: 100px;
-        margin: 0 auto
-    }
-
-
+  .button-goback {
+    margin-top: 100px;
+    width: 330px;
+  }
+  .goback {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 100px;
+    margin: 0 auto;
+  }
 }
 
-
 /* TROCANDO ICONE DO DATEPICKER */
+
+
+
 input[type="date"]::-webkit-calendar-picker-indicator {
-    color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    display: block;
-    background: url(/img/vector.png) no-repeat;
-    margin-top: 5px; 
-    width: 20px;
-    height: 20px;
-    border-width: thin;
+  color: #767676;
+  opacity: 1;
+  display: block;
+  background: url(/img/vector.png) no-repeat;
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
 }
 
 /* TROCANDO CHECK DO CHECKBOX */
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  visibility: hidden;
+}
 
-:root {
-    --terms-color: red;
-    --terms-disabled: #949595;
-  }
-  
-  .terms {
-    display: grid;
-    grid-template-columns: 1em auto;
-    gap: 0.5em;
-  }
-  
-  .terms + .terms {
-    margin-top: 1em;
-  }
-  
-  .terms--disabled {
-    color: var(--terms-disabled);
-    cursor: not-allowed;
-  }
-  
-  input[type="checkbox"] {
-    /* Add if not using autoprefixer */
-    -webkit-appearance: none;
-    /* Remove most all native input styles */
-    appearance: none;
-    /* For iOS < 15 */
-    background-color: var(--form-background);
-    /* Not removed via appearance */
-    margin: 2px 0px 20px 0px;
-  
-    font: inherit;
-    color: currentColor;
-    width: 20px;
-    height: 20px;
-    border: 0.12em solid #0ca1a1;
-    border-radius: 0.15em;
-    transform: translateY(-0.075em);
+/* Creating a custom checkbox
+        based on demand */
 
-    display: grid;
-    place-content: center;
-  }
-  
-  input[type="checkbox"]::before {
-    content: "";
-    width: 0.75em;
-    height: 0.75em;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-    transform: scale(0);
-    transform-origin: bottom left;
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--terms-color);
-    /* Windows High Contrast Mode */
-    background:black;
-  }
-  
-  input[type="checkbox"]:checked::before {
-    transform: scale(1);
-  }
-  
+.terms {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+}
+.geekmark {
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border: solid 2px #0dbdbd;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
 
-  
-  input[type="checkbox"]:disabled {
-    --terms-color: var(--terms-disabled);
-  
-    color: var(--terms-disabled);
-    cursor: not-allowed;
-  }
+/* Specify the background color to be
+        shown when checkbox is active */
+
+/* Specify the background color to be
+        shown when checkbox is checked */
+.terms input:checked ~ .geekmark {
+  background-color: #0dbdbd;
+}
+
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Display checkmark when checked */
+.terms input:checked ~ .geekmark:after {
+  display: block;
+}
+
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+        showing only two border to make it look
+        like a tickmark */
+.terms .geekmark:after {
+  left: 5px;
+  bottom: 1px;
+  width: 2.5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

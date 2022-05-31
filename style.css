@@ -14,12 +14,23 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-header {
-    width: 620px;
+main {
+    max-width: 620px;
+    height: 763px;
+    margin: 0px auto;
+    background: white;
+    border-radius: 20px;
+
+}
+
+.header-input {
+    max-width: 620px;
     margin: 0px auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
     
 }
 
@@ -27,28 +38,24 @@ div a {
     text-decoration: none;
 }
 
-header {
-    padding: 30px;
-}
-h1 {
+.header-input h1{
     font-family: 'Inter', sans-serif;
-    line-height: 24px;
-    font-size: 36px;
+    line-height: 1.5em;
+    font-size: 2.25em;
     margin-top: 10px;
     color:#111111;
 }
 
-main {
-    width: 620px;
-    height: 763px;
-    margin: 40px auto;
-    background: white;
-    border-radius: 20px;
-
+.sucess h1 {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5em;
+    font-size: 2.5em;
+    margin-top: 10px;
+    color:#111111;
 }
 
+
 .form  {
-    flex: block ;
     margin: 0 auto;
     padding-left: 46px;
     padding-right:59px ;
@@ -56,7 +63,18 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     color: #767676;
+}
 
+.form1 {
+    padding-bottom: 55px;
+}
+
+.form1, .form2 {
+    padding-bottom: 60px;
+}
+
+.form1 {
+    padding-bottom: 55px;
 }
 
 .form label {
@@ -68,40 +86,42 @@ main {
     border: 2px solid #AAAAAA;
     border-radius: 4px;
     background: white;
-    line-height: 40px;
+    height: 40px;
     padding: 0 10px;
-    margin-bottom: 60px
- 
-
 }
-.form1 input{
+
+.input1 {
        width: 513px;
 }   
 
-.form2 input{
+.input2, .input4{
     width: 330px;
 }
 
-.form3 input {
-    width: 162px;
+.input3 {
+    width: 160px;
 }
 
+.input5
 .form3 {
+    
+}
+
+.form3 , .form5{
     padding-left: 22px;
 }
 
 
 
-
-
 .box-register {
-    width: 620px;
+    max-width: 620px;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 20px;
     padding: 45px;
+    flex-flow: row wrap;
     
     
 }
@@ -151,6 +171,21 @@ input[type="checkbox"]:focus+label:before{
 
 
 /* SUCESS.HTML */
+.header-sucess {
+    width: 620px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+
+}
+
+.sucess-full {
+    display: flex;
+    flex-flow: column wrap;
+}
 
 .sucess {
     width: 620px;
@@ -158,7 +193,7 @@ input[type="checkbox"]:focus+label:before{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .button-goback {
@@ -188,3 +223,195 @@ input[type="checkbox"]:focus+label:before{
     background:#0ca1a1;
     cursor: pointer;
 }
+
+/* MOBILE  */
+
+@media  (max-width:650px){
+    body {
+        background: white;
+    }
+
+
+    main, .header-input, .header-sucess, .box-register {
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    main {
+        height: 100%;
+    }
+    
+    .form3 , .form5 {
+        padding: 0px;
+    }
+
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px;
+    }
+     
+    .form1, .form2, .form4{
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 38px;
+    }
+
+    .input1, .input2, .input4 {
+        width: 100%;
+    }
+
+    .form3 {
+        
+    }
+
+    
+     .form3, .form5 {
+    
+        order: +1;
+    }
+
+    .box-register {
+        padding: 0px 0px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .button-register {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 70px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        ;
+    }
+    
+    /* SUCESS */
+
+    .sucess {
+        height: 100%;
+        width: 100%;
+        margin-top:10px ;
+    }
+
+
+    .header-sucess {
+        margin-top: 180px;
+     }
+
+    .sucess-full {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .button-goback {
+        margin-top: 100px;
+        width: 330px;
+    }
+    .goback {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 100px;
+        margin: 0 auto
+    }
+
+
+}
+
+
+/* TROCANDO ICONE DO DATEPICKER */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(/img/vector.png) no-repeat;
+    margin-top: 5px; 
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
+/* TROCANDO CHECK DO CHECKBOX */
+
+:root {
+    --terms-color: red;
+    --terms-disabled: #949595;
+  }
+  
+  .terms {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+  }
+  
+  .terms + .terms {
+    margin-top: 1em;
+  }
+  
+  .terms--disabled {
+    color: var(--terms-disabled);
+    cursor: not-allowed;
+  }
+  
+  input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 2px 0px 20px 0px;
+  
+    font: inherit;
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    border: 0.12em solid #0ca1a1;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--terms-color);
+    /* Windows High Contrast Mode */
+    background:black;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+
+  
+  input[type="checkbox"]:disabled {
+    --terms-color: var(--terms-disabled);
+  
+    color: var(--terms-disabled);
+    cursor: not-allowed;
+  }

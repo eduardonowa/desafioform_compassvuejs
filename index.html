@@ -12,7 +12,8 @@
   </head>
   <body>
     <main class="card">
-    <header>
+      
+    <header class="header-input">
        <img src="/img/data 1.jpg" alt="image header" />
         <h1>Intern Sign Up</h1>
     </header>
@@ -20,32 +21,36 @@
       <div class="form">
         <div class="form1">
           <label for="fullname">Full Name *</label>
-          <input type="text" class="input1" placeholder="Name" />
+          <input type="text"  required class="input1" placeholder="Name"  />
         </div>
-        <div class="form2">
-          <label for="email">Email *</label>
-          <input type="email" class="input2" placeholder="foo@bar.com" />
-        </div>
-        <div class="form3">
-          <label for="phone">Phone *</label>
-          <input type="tel" placeholder="(83) 00000-0000" class="input3"/>
-        </div>
-        <div class="form2">
+      
+          <div class="form2">
+            <label for="email">Email *</label>
+            <input type="email"  required class="input2" placeholder="foo@bar.com" />
+          </div>
+          <div class="form3">
+            <label for="phone">Phone *</label>
+            <input type="tel" required placeholder="(83) 00000-0000" class="input3" />
+          </div>
+        
+        <div class="form4">
           <label for="password">Password *</label>
-          <input type="password" class="input4"/>
+          <input type="password" required class="input4" />
         </div>
-        <div  class="form3">
+        <div  class="form5">
           <label for="birthday">Birthday *</label></p>
-          <input type="date" placeholder="yyyy/mm/dd" class="input5"/>
+          <input type="date"  required placeholder="yyyy/mm/dd" class="input5" />
         </div>
       </div>
     </form>
       <div class="box-register">
         <div class="box-terms"> 
-          <input type="checkbox" name="terms" checked/>
-          <label for="terms">I accept the terms and privacy</label>
+          <label class="terms">
+             <input type="checkbox" name="terms" checked   required /> 
+            I accept the terms and privacy
+          </label>
         </div>
-        <a href="/"><input type="button" value="Register" class="button-register"/></a>
+        <a href="https://google.com.br"><input type="button" value="Register" class="button-register"/></a>
       </div>
     </main>
     

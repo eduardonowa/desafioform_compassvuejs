@@ -1,0 +1,24 @@
+.button-goback {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .goback {
+    padding: 0px 12px;
+    font-size: 2.25em;
+    width: 269px;
+    height: 177px;
+    border-radius: 10px;
+    border: none;
+    background: #0dbdbd;
+    color: white;
+    gap: 6px;
+  }
+  
+  .goback:hover {
+    background: #0ca1a1;
+    cursor: pointer;
+  }

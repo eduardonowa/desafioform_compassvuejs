@@ -1,237 +1,3 @@
-
-/* RESET CSS*/
-body,
-h1,
-h2,
-p,
-ul,
-li,
-a {
-  margin: 0px;
-  padding: 0px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #e5e5e5;
-  font-family: "Nunito", sans-serif;
-}
-
-span {
-  display: block;
-}
-
-.warning {
-  color: red;
-  display: visible;
-  padding: 5px 0px 0px 5px;
-  font-size: 1em;
-}
-
-.clear {
-  display: block;
-  visibility: hidden;
-  padding-left: 5px;
-  font-size: 1em;
-  padding-top: 5px;
-}
-
-main {
-  max-width: 620px;
-  height: 100%;
-  min-height: 700px;
-  margin: 100px auto;
-  background: white;
-  border-radius: 20px;
-}
-
-.header-input {
-  max-width: 620px;
-  margin: 0px auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-}
-
-div a {
-  text-decoration: none;
-}
-
-.header-input h1 {
-  font-family: "Inter", sans-serif;
-  line-height: 1.5em;
-  font-size: 2.25em;
-  margin-top: 10px;
-  color: #111111;
-}
-
-/* FORMULÁRIO */
-
-.form {
-  margin: 0 auto;
-  padding-left: 46px;
-  padding-right: 59px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  color: #767676;
-}
-
-.form1,
-.form2 {
-  padding-bottom: 15px;
-}
-
-.form label {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.form input {
-  border: 2px solid #aaaaaa;
-  border-radius: 4px;
-  background: white;
-  height: 40px;
-  padding: 0 10px;
-}
-
-.input1 {
-  width: 513px;
-}
-
-.input2,
-.input4 {
-  width: 330px;
-}
-
-.input3,
-.input5 {
-  width: 160px;
-  color: #767676;
-}
-
-.form3,
-.form5 {
-  padding-left: 22px;
-}
-
-/* FOOTER */
-.box-register {
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding: 45px;
-  flex-flow: row wrap;
-}
-
-.box-terms input {
-  display: flex;
-  cursor: pointer;
-}
-
-.label-text {
-  text-shadow: 2px 2px 2 black;
-}
-
-.box-terms label {
-  color: #111111;
-  cursor: pointer;
-  display: flex;
-  padding-left: 13px;
-  padding-top: 7px;
-}
-
-.button-register {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 12px;
-  gap: 6px;
-  width: 81px;
-  height: 40px;
-  background: #0dbdbd;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  margin-right: 15px;
-}
-
-.button-register:hover {
-  background: #0ca1a1;
-  cursor: pointer;
-}
-
-/* SUCESS.HTML */
-.header-sucess {
-  width: 620px;
-  margin: 0px auto;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  padding-top: 90px;
-}
-
-.sucess h1 {
-  font-family: "Inter", sans-serif;
-  line-height: 1.5em;
-  font-size: 2.5em;
-  margin-top: 10px;
-  color: #111111;
-}
-
-
-.sucess-full {
-  display: none;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.sucess {
-  width: 620px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 25px;
-}
-
-.button-goback {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 150px auto;
-}
-
-.goback {
-  padding: 0px 12px;
-  font-size: 2.25em;
-  width: 269px;
-  height: 177px;
-  border-radius: 10px;
-  border: none;
-  background: #0dbdbd;
-  color: white;
-  gap: 6px;
-}
-
-.goback:hover {
-  background: #0ca1a1;
-  cursor: pointer;
-}
-
-/* MOBILE  */
-
 @media (max-width: 650px) {
   body {
     background: white;
@@ -253,7 +19,7 @@ div a {
     width: 100%;
     padding: 0px;
   }
-  
+
   .form3,
   .form5 {
     padding: 0px;
@@ -349,9 +115,8 @@ div a {
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    width: 80vw;
-    height: 8vh;
+    width: 88vw;
+    height: 70px;
     margin: 10px auto 0px;
     font-size: 1.125em;
   }
@@ -368,9 +133,16 @@ div a {
     margin-top: 100px;
   }
 
+  .sucess-full {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   .button-goback {
     margin-top: 100px;
-    width: 100%;
+    width: 330px;
   }
   .goback {
     display: flex;

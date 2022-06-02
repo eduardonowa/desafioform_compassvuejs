@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -12,30 +12,53 @@
   </head>
   <body>
     <main class="card">
-    <div class="header">
-       <img src="/img/data 1.jpg" alt="" />
+      
+    <header class="header-input">
+       <img src="/img/data 1.jpg" alt="image header" />
         <h1>Intern Sign Up</h1>
-    </div>
-    <form action="">
-      <div>
-        <label for="fullname">Full Name *</label><br>
-        <input type="text" placeholder="Name" />
-        <label for="email">Email *</label>
-        <input type="email" placeholder="foo@bar.com" />
-        <label for="phone">Phone *</label>
-        <input type="tel" placeholder="(83) 00000-0000" />
-        <label for="password">Password *</label>
-        <input type="password"/>
-        <label for="birthday">Birthday *</label> *</p>
-        <input type="datetime" placeholder="yyyy/mm/dd" />
-      </div>
+    </header>
+     <form action="">
+      <div class="form">
+        <div class="form1">
+          <label for="fullname">Full Name *</label>
+          <input type="text"  required class="input1" placeholder="Name"  id="nameInput"/>
+          <span id="span0" class="clear">Fullname invalid</span>
+        </div>
+        <div class="form2">
+            <label for="email">Email *</label>
+            <input type="email"  required class="input2" placeholder="foo@bar.com" id="emailInput"/>
+            <span id="span1" class="clear">Email invalid</span>
+        </div>
+        <div class="form3">
+            <label for="phone">Phone *</label>
+            <input type="tel" required placeholder="(83) 00000-0000" class="input3" id="phoneInput"/>
+            <span id="span2" class="clear">Phone invalid</span>
+        </div>
         
-      <div class="footer">
-        <input type="checkbox" name="terms" checked/>
-        <label for="terms">I accept the terms and privacy</label>
-        <input type="button" value="Register" class="button-register" />
+        <div class="form4">
+          <label for="password">Password *</label>
+          <input type="password" required class="input4" id="passwordInput"/>
+          <span id="span3" class="clear">Password invalid</span>
+        </div>
+        <div  class="form5">
+          <label for="birthday">Birthday *</label>
+          <input type="date"  required placeholder="yyyy/mm/dd" class="input5" id="birthdayInput"/>
+          <span id="span4" class="clear">Birthday invalid</span>
+        </div>
       </div>
-    </main>
     </form>
+        <div class="box-register">
+          <div class="box-terms"> 
+            <label class="terms">
+             <input type="checkbox" name="terms" checked  id="checkbox" required />
+             <span class="geekmark"></span> 
+              <span class="label-text">I accept the terms and privacy</span> 
+            </label>
+            <span id="span5" class="clear">You must accept the terms</span>
+          </div>
+          <input type="button" onClick="register(event)" value="Register" class="button-register"/></a>
+        </div>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>

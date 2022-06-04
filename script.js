@@ -5,7 +5,7 @@ const register = (event) => {
     return document.getElementById(id).value;
   };
 
-  const getdoc = (span, className) => {
+  const getDoc = (span, className) => {
     return (document.getElementById(span).className = className);
   };
 
@@ -13,58 +13,66 @@ const register = (event) => {
     return window.localStorage.setItem(name, data);
   };
 
+  // not allow empty /.*\S.*/
+
   const name = pull("nameInput");
-  if (name) {
+  if (
+    /^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)/.test(name)
+  ) {
     createLS("name", name);
-    getdoc("span0", "clear");
+    getDoc("span0", "clear");
   } else {
-    getdoc("span0", "warning");
+    getDoc("span0", "warning");
     createLS("name", "");
   }
 
-  const email = document.getElementById("emailInput").value;
-  if (email) {
-    window.localStorage.setItem("email", email);
-    document.getElementById("span1").className = "clear";
+  const email = pull("emailInput");
+  if (
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+      email
+    )
+  ) {
+    createLS("email", email);
+    getDoc("span1", "clear");
   } else {
-    document.getElementById("span1").className = "warning";
-    window.localStorage.setItem("email", "");
+    getDoc("span1", "warning");
+    createLS("email", "");
   }
 
-  const phone = document.getElementById("phoneInput").value;
-  if (phone) {
-    window.localStorage.setItem("phone", phone);
-    document.getElementById("span2").className = "clear";
+  const phone = pull("phoneInput");
+  if (/^[0-9]{11}/.test(phone)) {
+    createLS("phone", phone);
+    getDoc("span2", "clear");
   } else {
-    document.getElementById("span2").className = "warning";
-    window.localStorage.setItem("phone", "");
+    getDoc("span2", "warning");
+    createLS("phone", "");
   }
 
-  const password = document.getElementById("passwordInput").value;
-  if (password) {
-    window.localStorage.setItem("password", password);
-    document.getElementById("span3").className = "clear";
+  const password = pull("passwordInput");
+  if (/^[0-9]{6,9}$/.test(password)) {
+    createLS("password", password);
+    getDoc("span3", "clear");
   } else {
-    document.getElementById("span3").className = "warning";
-    window.localStorage.setItem("password", "");
+    getDoc("span3", "warning");
+    createLS("password", "");
   }
 
-  const birthday = document.getElementById("birthdayInput").value;
+  const birthday = pull("birthdayInput");
   if (birthday) {
-    window.localStorage.setItem("birthday", birthday);
-    document.getElementById("span4").className = "clear";
+    createLS("birthday", birthday);
+    getDoc("span4", "clear");
   } else {
-    document.getElementById("span4").className = "warning";
-    window.localStorage.setItem("birthday", "");
+    getDoc("span4", "warning");
+    createLS("birthday", "");
   }
 
   const checkbox = document.querySelector(".chk").checked;
   if (checkbox) {
-    window.localStorage.setItem("checkbox", checkbox);
-    document.getElementById("span5").className = "clear";
+    createLS("checkbox", checkbox);
+    getDoc("span5", "clear");
   } else {
-    document.getElementById("span5").className = "warning";
-    window.localStorage.setItem("checkbox", "");
+    getDoc("span5", "warning");
+    createLS("checkbox", "");
   }
 
   const nameStorage = window.localStorage.getItem("name");

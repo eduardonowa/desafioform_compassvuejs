@@ -63,7 +63,6 @@ const register = (event) => {
 
   const phone = pull("phoneInput");
   const phoneFormat = phone.replace(/\W/g,'')
-  console.log(phoneFormat);
   if (/^[0-9]{11}$/.test(phoneFormat)) {
     createLS("phone", phoneFormat)
     getDoc("span2", "clear");

@@ -1,18 +1,18 @@
 span {
-    display: block;
-  }
-  
-  .warning {
-    color: red;
-    display: visible;
-    padding: 5px 0px 0px 5px;
-    font-size: 1em;
-  }
-  
-  .clear {
-    display: block;
-    visibility: hidden;
-    padding-left: 5px;
-    font-size: 1em;
-    padding-top: 5px;
-  }
+  display: block;
+}
+
+.warning {
+  color: red;
+  display: visible;
+  padding: 5px 0px 0px 5px;
+  font-size: 1em;
+}
+
+.clear {
+  display: block;
+  visibility: hidden;
+  padding-left: 5px;
+  font-size: 1em;
+  padding-top: 5px;
+}

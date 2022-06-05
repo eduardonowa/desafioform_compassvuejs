@@ -1,21 +1,21 @@
 .header-input {
-    max-width: 620px;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-  }
-  
-  div a {
-    text-decoration: none;
-  }
-  
-  .header-input h1 {
-    font-family: "Inter", sans-serif;
-    line-height: 1.5em;
-    font-size: 2.25em;
-    margin-top: 10px;
-    color: #111111;
-  }
+  max-width: 620px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+div a {
+  text-decoration: none;
+}
+
+.header-input h1 {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5em;
+  font-size: 2.25em;
+  margin-top: 10px;
+  color: #111111;
+}

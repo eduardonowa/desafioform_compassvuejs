@@ -62,9 +62,9 @@ const register = (event) => {
   }
 
   const phone = pull("phoneInput");
-  const phoneFormat = phone.replace(/\W/g,'')
+  const phoneFormat = phone.replace(/\W/g, "");
   if (/^[0-9]{11}$/.test(phoneFormat)) {
-    createLS("phone", phoneFormat)
+    createLS("phone", phoneFormat);
     getDoc("span2", "clear");
   } else {
     getDoc("span2", "warning");
@@ -118,4 +118,10 @@ const register = (event) => {
   }
 };
 
+const goBack = (event) => {
+  event.preventDefault();
+  document.getElementById("card").style.display = "block";
+  document.getElementById("sucess").style.display = "none";
+  location.reload();
+};
 // window.location.replace("sucess.html")

@@ -1,46 +1,45 @@
 .box-register {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 45px;
-    flex-flow: row wrap;
-  }
-  
-  .box-terms input {
-    display: flex;
-    cursor: pointer;
-  }
-  
-  
-  .box-terms label {
-    color: #111111;
-    cursor: pointer;
-    display: flex;
-    padding-left: 13px;
-    padding-top: 7px;
-    text-shadow: 0.5px 0.5px 10px rgb(0, 0,0, 0.5)
-  }
-  
-  .button-register {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 12px;
-    gap: 6px;
-    width: 81px;
-    height: 40px;
-    background: #0dbdbd;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    margin-right: 15px;
-  }
-  
-  .button-register:hover {
-    background: #0ca1a1;
-    cursor: pointer;
-  }
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 45px;
+  flex-flow: row wrap;
+}
+
+.box-terms input {
+  display: flex;
+  cursor: pointer;
+}
+
+.box-terms label {
+  color: #111111;
+  cursor: pointer;
+  display: flex;
+  padding-left: 13px;
+  padding-top: 7px;
+  text-shadow: 0.5px 0.5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.button-register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 6px;
+  width: 81px;
+  height: 40px;
+  background: #0dbdbd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.button-register:hover {
+  background: #0ca1a1;
+  cursor: pointer;
+}

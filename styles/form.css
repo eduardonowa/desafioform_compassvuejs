@@ -8,11 +8,22 @@
     color: #767676;
   }
   
+
+  .form1 {
+    width: 100%;
+  }
   .form1,
   .form2 {
     padding-bottom: 15px;
   }
+
+.form2, .form4 {
+  width: 65%;
+}
   
+.form3, .form5 {
+  width: 35%;
+}
   .form label {
     display: flex;
     justify-content: flex-start;
@@ -30,17 +41,17 @@
     outline: 0;
   }
   .input1 {
-    width: 513px;
+    width: 100%;
   }
   
   .input2,
   .input4 {
-    width: 330px;
+    width: 100%;
   }
   
   .input3,
   .input5 {
-    width: 160px;
+    width: 100%;
     color: #767676;
   }
   

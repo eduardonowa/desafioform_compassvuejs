@@ -1,3 +1,27 @@
+/* Máscaras ER */
+function mascara(o, f) {
+  v_obj = o;
+  v_fun = f;
+  setTimeout("execmascara()", 1);
+}
+function execmascara() {
+  v_obj.value = v_fun(v_obj.value);
+}
+function mtel(v) {
+  v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+  v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+  v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+  return v;
+}
+function id(el) {
+  return document.getElementById(el);
+}
+window.onload = function () {
+  id("phoneInput").onkeyup = function () {
+    mascara(this, mtel);
+  };
+};
+
 const register = (event) => {
   event.preventDefault();
 
@@ -12,8 +36,6 @@ const register = (event) => {
   const createLS = (name, data) => {
     return window.localStorage.setItem(name, data);
   };
-
-  // not allow empty /.*\S.*/
 
   const name = pull("nameInput");
   if (
@@ -40,8 +62,10 @@ const register = (event) => {
   }
 
   const phone = pull("phoneInput");
-  if (/^[0-9]{11}/.test(phone)) {
-    createLS("phone", phone);
+  const phoneFormat = phone.replace(/\W/g,'')
+  console.log(phoneFormat);
+  if (/^[0-9]{11}$/.test(phoneFormat)) {
+    createLS("phone", phoneFormat)
     getDoc("span2", "clear");
   } else {
     getDoc("span2", "warning");

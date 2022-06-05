@@ -1,233 +1,227 @@
 @media (max-width: 650px) {
-  body {
-    background: white;
-    height: 100%;
+    body {
+      background: white;
+      height: 100%;
+    }
+  
+    main {
+      margin: 0 auto;
+      height: 100%;
+      width: 100%;
+      padding: 30px;
+    }
+  
+    .header-input,
+    .header-sucess,
+    .box-register {
+      margin: 0 auto;
+      height: 100%;
+      width: 100%;
+      padding: 0px;
+    }
+    
+    .form3,
+    .form5 {
+      padding: 0px;
+    }
+  
+    .form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0px 0px;
+      margin-bottom: 20px;
+    }
+  
+    .form1,
+    .form2,
+    .form4 {
+      width: 100%;
+      padding: 0px;
+      margin-bottom: 10px;
+    }
+  
+    .input1,
+    .input2,
+    .input4 {
+      width: 100%;
+    }
+  
+    .input3,
+    .input5 {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+  
+    .input3 {
+      width: 100%;
+      margin-right: 20px;
+    }
+  
+    .input5 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    .form3,
+    .form5 {
+      display: flex ;
+      flex-flow: column nowrap;
+      order: +1;
+    }
+  
+    .form3 {
+      display: flex;
+      flex: 1;
+      width: 45%;
+      margin-right: 5vw;
+    }
+  
+    .form5 {
+      display: flex;
+      flex: 1;
+      width: 45%;
+      display: flex;
+    }
+  
+    /* FOOTER */
+    .box-register {
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 0px 0px;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+    }
+  
+    .box-terms {
+      justify-content: flex-start;
+      padding-left: 25px;
+    }
+  
+    .box-register a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .button-register {
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 0;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 80vw;
+      height: 8vh;
+      margin: 10px auto 0px;
+      font-size: 1.125em;
+    }
+  
+    /* SUCESS */
+  
+    .sucess {
+      height: 100%;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .header-sucess {
+      margin-top: 100px;
+    }
+  
+    .button-goback {
+      margin-top: 100px;
+      width: 100%;
+    }
+    .goback {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      width: 80vw;
+      height: 100px;
+      margin: 0 auto;
+    }
   }
-
-  main {
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    padding: 30px;
+  
+  /* TROCANDO ICONE DO DATEPICKER */
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #767676;
+    opacity: 1;
+    display: block;
+    background: url(/img/vector.png) no-repeat;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
   }
-
-  .header-input,
-  .header-sucess,
-  .box-register {
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
+  
+  /* TROCANDO CHECK DO CHECKBOX */
+  /* Hide the default checkbox */
+  input[type="checkbox"] {
+    visibility: hidden;
   }
-
-  .form3,
-  .form5 {
-    padding: 0px;
+  
+  /* Creating a custom checkbox
+          based on demand */
+  
+  .terms {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
   }
-
-  .form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0px 0px;
-    margin-bottom: 20px;
+  .geekmark {
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border: solid 2px #0dbdbd;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
-
-  .form1,
-  .form2,
-  .form4 {
-    width: 100%;
-    padding: 0px;
-    margin-bottom: 10px;
+  
+  /* Specify the background color to be
+          shown when checkbox is active */
+  
+  /* Specify the background color to be
+          shown when checkbox is checked */
+  .terms input:checked ~ .geekmark {
+    background-color: #0dbdbd;
   }
-
-  .input1,
-  .input2,
-  .input4 {
-    width: 100%;
+  
+  /* Checkmark to be shown in checkbox */
+  /* It is not be shown when not checked */
+  .geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
   }
-
-  .input3,
-  .input5 {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+  
+  /* Display checkmark when checked */
+  .terms input:checked ~ .geekmark:after {
+    display: block;
   }
-
-  .input3 {
-    width: 100%;
-    margin-right: 20px;
+  
+  /* Styling the checkmark using webkit */
+  /* Rotated the rectangle by 45 degree and 
+          showing only two border to make it look
+          like a tickmark */
+  .terms .geekmark:after {
+    left: 5px;
+    bottom: 1px;
+    width: 2.5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
-
-  .input5 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  .form3,
-  .form5 {
-    display: flex ;
-    flex-flow: column nowrap;
-    order: +1;
-  }
-
-  .form3 {
-    display: flex;
-    flex: 1;
-    width: 45%;
-    margin-right: 5vw;
-  }
-
-  .form5 {
-    display: flex;
-    flex: 1;
-    width: 45%;
-    display: flex;
-  }
-
-  /* FOOTER */
-  .box-register {
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 0px 0px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-  }
-
-  .box-terms {
-    justify-content: flex-start;
-    padding-left: 25px;
-  }
-
-  .box-register a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .button-register {
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    width: 88vw;
-    height: 70px;
-    margin: 10px auto 0px;
-    font-size: 1.125em;
-  }
-
-  /* SUCESS */
-
-  .sucess {
-    height: 100%;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .header-sucess {
-    margin-top: 100px;
-  }
-
-  .sucess-full {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .button-goback {
-    margin-top: 100px;
-    width: 330px;
-  }
-  .goback {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    height: 100px;
-    margin: 0 auto;
-  }
-}
-
-/* TROCANDO ICONE DO DATEPICKER */
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  color: #767676;
-  opacity: 1;
-  display: block;
-  background: url(/img/vector.png) no-repeat;
-  margin-top: 5px;
-  width: 20px;
-  height: 20px;
-  border-width: thin;
-}
-
-/* TROCANDO CHECK DO CHECKBOX */
-/* Hide the default checkbox */
-input[type="checkbox"] {
-  visibility: hidden;
-}
-
-/* Creating a custom checkbox
-        based on demand */
-
-.terms {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  font-size: 16px;
-}
-.geekmark {
-  position: absolute;
-  top: 9px;
-  left: 5px;
-  height: 18px;
-  width: 18px;
-  background-color: white;
-  border: solid 2px #0dbdbd;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-/* Specify the background color to be
-        shown when checkbox is active */
-
-/* Specify the background color to be
-        shown when checkbox is checked */
-.terms input:checked ~ .geekmark {
-  background-color: #0dbdbd;
-}
-
-/* Checkmark to be shown in checkbox */
-/* It is not be shown when not checked */
-.geekmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Display checkmark when checked */
-.terms input:checked ~ .geekmark:after {
-  display: block;
-}
-
-/* Styling the checkmark using webkit */
-/* Rotated the rectangle by 45 degree and 
-        showing only two border to make it look
-        like a tickmark */
-.terms .geekmark:after {
-  left: 5px;
-  bottom: 1px;
-  width: 2.5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 5px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}

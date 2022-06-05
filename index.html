@@ -11,33 +11,33 @@
     <title>Intern Sign Up</title>
   </head>
   <body>
-    <main class="card">
+    <main class="card" id="card">
       
     <header class="header-input">
        <img src="/img/data 1.jpg" alt="image header" />
         <h1>Intern Sign Up</h1>
     </header>
-     <form action="">
+     <form action="" >
       <div class="form">
         <div class="form1">
           <label for="fullname">Full Name *</label>
-          <input type="text"  required class="input1" placeholder="Name"  id="nameInput"/>
+          <input type="text" autocomplete="nope" required class="input1" placeholder="Name"  id="nameInput"/>
           <span id="span0" class="clear">Fullname invalid</span>
         </div>
         <div class="form2">
             <label for="email">Email *</label>
-            <input type="email"  required class="input2" placeholder="foo@bar.com" id="emailInput"/>
+            <input type="email" autocomplete="nope" required class="input2" placeholder="foo@bar.com" id="emailInput"/>
             <span id="span1" class="clear">Email invalid</span>
         </div>
         <div class="form3">
             <label for="phone">Phone *</label>
-            <input type="tel" required placeholder="(83) 00000-0000" class="input3" id="phoneInput"/>
+            <input type="tel" required autocomplete="nope" placeholder="(83) 00000-0000" class="input3" id="phoneInput"/>
             <span id="span2" class="clear">Phone invalid</span>
         </div>
         
         <div class="form4">
           <label for="password">Password *</label>
-          <input type="password" required class="input4" id="passwordInput"/>
+          <input type="password" required autocomplete="nope" class="input4" id="passwordInput" placeholder="Enter your password"/>
           <span id="span3" class="clear">Password invalid</span>
         </div>
         <div  class="form5">
@@ -50,14 +50,27 @@
         <div class="box-register">
           <div class="box-terms"> 
             <label class="terms">
-             <input type="checkbox" name="terms" checked  id="checkbox" required />
-             <span class="geekmark"></span> 
+             <input type="checkbox" name="terms" checked value="xD" class="chk" id="checkbox" required />
+             <span class="geekmark"></span>
               <span class="label-text">I accept the terms and privacy</span> 
             </label>
             <span id="span5" class="clear">You must accept the terms</span>
           </div>
           <input type="button" onClick="register(event)" value="Register" class="button-register"/></a>
         </div>
+    </main>
+    <main class="sucess-full" id="sucess">
+      <header class="header-sucess" >
+        <img src="/img/data 1.jpg" alt="image header" />
+      </header>
+      <div class="sucess">
+        <h1>Sucess!</h1>
+      </div>
+      <div class="button-goback">
+        <a href="index.html">
+          <input type="button" value="Go Back!" class="goback" />
+        </a>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>

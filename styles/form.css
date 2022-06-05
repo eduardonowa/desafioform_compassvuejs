@@ -1,0 +1,50 @@
+.form {
+    margin: 0 auto;
+    padding-left: 46px;
+    padding-right: 59px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #767676;
+  }
+  
+  .form1,
+  .form2 {
+    padding-bottom: 15px;
+  }
+  
+  .form label {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .form input {
+    border: 2px solid #aaaaaa;
+    border-radius: 4px;
+    background: white;
+    height: 40px;
+    padding: 0 10px;
+  }
+  
+  .form input:focus {
+    outline: 0;
+  }
+  .input1 {
+    width: 513px;
+  }
+  
+  .input2,
+  .input4 {
+    width: 330px;
+  }
+  
+  .input3,
+  .input5 {
+    width: 160px;
+    color: #767676;
+  }
+  
+  .form3,
+  .form5 {
+    padding-left: 22px;
+  }

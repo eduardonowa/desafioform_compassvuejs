@@ -1,0 +1,9 @@
+main {
+    max-width: 620px;
+    height: 100%;
+    min-height: 700px;
+    margin: 100px auto;
+    background: white;
+    border-radius: 20px;
+  }
+  

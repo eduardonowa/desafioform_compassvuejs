@@ -1,1 +1,9 @@
-/* RESET CSS*/
+@import url(/styles/reset.css);
+@import url(/styles/body.css);
+@import url(/styles/main.css);
+@import url(/styles/header.css);
+@import url(/styles/form.css);
+@import url(/styles/footer.css);
+@import url(/styles/sucess.css);
+@import url(/styles/span.css);
+@import url(/styles/mediaq.css);
